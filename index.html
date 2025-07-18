@@ -22,7 +22,7 @@
                 <li><a href="#productos"><i class="fa-solid fa-paw"></i> Productos</a></li>
                 <li><a href="#resenia"><i class="fa-solid fa-dog"></i>Reseña</a></li>
                 <li><a href="#contacto"><i class="fa-solid fa-bell-concierge"></i>Contacto</a></li>
-                <li><a href="#acerca"><i class="fa-solid fa-dragon"></i>Sobre nosotros</a></li>  
+                <li><a href="#acerca"><i class="fa-solid fa-dragon"></i>Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -33,12 +33,18 @@
         <!--Video-->
         <section class="seccion video">
             <h1>Inicio</h1>
-           <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/Ln4KSN0rchI?autoplay=1" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ln4KSN0rchI?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+        <button id="boton-carrito" class="boton-carrito-fijo">
+            🛒 <span id="contador-carrito">0</span>
+        </button>
+
+        <!-- Carrito de compras -->
+        <section class="carritoCompras">
 
         </section>
         <!--Productos-->
@@ -46,77 +52,8 @@
         </a>
         <section class="seccion productos">
             <h2>Productos</h2>
-            <div class="productos">
-                <!-- <div class="producto">
-                    <img src="imagenes/camita-gato.png" alt="camita-gato">
-                    <div class="producto-contenido">
-                        <h4>Cama para mascota</h4>
-                        <span>$18.900</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/camita-premium-gatito.png" alt="camita-premium-gato">
-                    <div class="producto-contenido">
-                        <h4>Cama para mascota premium</h4>
-                        <span>$35.000</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/collar-colores.png" alt="collar-colores">
-                    <div class="producto-contenido">
-                        <h4>Collar</h4>
-                        <span>$7.700</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/comida-gato.png" alt="comida-gato">
-                    <div class="producto-contenido">
-                        <h4>Comida para gato Wiskart 1 kg</h4>
-                        <span>$6.300</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/correa-rosa.png" alt="correa-rosa">
-                    <div class="producto-contenido">
-                        <h4>Correa Rosa</h4>
-                        <span>$10.800</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/juguete-gato.png" alt="juguete-gato">
-                    <div class="producto-contenido">
-                        <h4>Cascabel juguete mascota</h4>
-                        <span>$5.400</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/mochila-gato.png" alt="mochila-gato">
-                    <div class="producto-contenido">
-                        <h4>Mochila para trasportar mascota</h4>
-                        <span>$39.200</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/peines-gatos.png" alt="peines-gatos">
-                    <div class="producto-contenido">
-                        <h4>Peines mascota</h4>
-                        <span>$29.730</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/transportador-gato.png" alt="transportador-gato">
-                    <div class="producto-contenido">
-                        <h4>Transportador mascota</h4>
-                        <span>$45.990</span>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="imagenes/traje-premium-gatito.png" alt="traje-premium-gatito">
-                    <div class="producto-contenido">
-                        <h4>Traje Premium(varios modelos)</h4>
-                        <span>Consultar stock</span>
-                    </div>
-                </div> -->
+            <div id="lista-productos">
+
             </div>
         </section>
         <!--Reseña-->
@@ -203,7 +140,9 @@
         <a id="acerca"></a>
         <section class="acerca">
             <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis, ratione magnam nobis voluptatum impedit ullam illo molestiae excepturi debitis illum numquam unde alias. Iusto similique voluptates dolorem dolores repudiandae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis, ratione magnam nobis
+                voluptatum impedit ullam illo molestiae excepturi debitis illum numquam unde alias. Iusto similique
+                voluptates dolorem dolores repudiandae!</p>
         </section>
     </main>
     <footer>
@@ -211,12 +150,12 @@
             <nav>
                 <h4>Mis gatitines</h4>
                 <ul class="nav-list">
-                <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="#productos"><i class="fa-solid fa-paw"></i> Productos</a></li>
-                <li><a href="#resenia"><i class="fa-solid fa-dog"></i>Reseña</a></li>
-                <li><a href="#contacto"><i class="fa-solid fa-bell-concierge"></i>Contacto</a></li>
-                <li><a href="#acerca"><i class="fa-solid fa-dragon"></i>Sobre nosotros</a></li>  
-            </ul>
+                    <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="#productos"><i class="fa-solid fa-paw"></i> Productos</a></li>
+                    <li><a href="#resenia"><i class="fa-solid fa-dog"></i>Reseña</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-bell-concierge"></i>Contacto</a></li>
+                    <li><a href="#acerca"><i class="fa-solid fa-dragon"></i>Sobre nosotros</a></li>
+                </ul>
             </nav>
             <div class="redes">
                 <h4>No te olvides de seguirnos</h4>
@@ -230,9 +169,9 @@
                 </ul>
             </div>
         </div>
-         <div class="copyright">
+        <div class="copyright">
             <p>Todos los derechos reservados &copy; Curso 2025 Marina Lencinas</p>
-        </div>       
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>
